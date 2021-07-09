@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính trung bình và tồng điểm</title>
+</head>
+<body>
+<script>
+    let vatLy = parseFloat(prompt("Nhập điểm vật lý : "));
+    let hoaHoc = parseFloat(prompt("Nhập điểm Hóa học : "));
+    let sinhHoc = parseFloat(prompt("Nhập điểm Sinh học : "));
+    function tongDiem(vatLy,hoaHoc,sinhHoc){
+        let tongDiem = vatLy+hoaHoc+sinhHoc;
+        return tongDiem;
+    }
+    function trungBinhDiem(vatLy,hoaHoc,sinhHoc){
+        let dTb = (vatLy+hoaHoc+sinhHoc)/3;
+        return dTb;
+    }
+    alert("Tổng điểm 3 môn là : "+tongDiem(vatLy,hoaHoc,sinhHoc));
+    alert("Điểm trung bình 3 môn là : "+trungBinhDiem(vatLy,hoaHoc,sinhHoc));
+</script>
+</body>
+</html>
